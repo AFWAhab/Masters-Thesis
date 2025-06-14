@@ -1,0 +1,41 @@
+longissimus thoracis muscle: 23
+blood: 8
+liver: 8
+testis: 7
+adult mammalian kidney: 6
+adipose tissue: 5
+endometrium: 4
+heart: 3
+subcutaneous adipose tissue: 3
+brain: 3
+lung: 3
+frontal cortex: 2
+Ammon's horn: 2
+gluteus medius: 2
+uterus: 2
+ovary: 2
+oocyte: 1
+layer of synovial tissue: 1
+pituitary gland: 1
+trigeminal ganglion: 1
+lymph node: 1
+endocardial endothelium: 1
+synovial membrane of synovial joint: 1
+right lobe of liver: 1
+CD4-positive helper T cell: 1
+T cell: 1
+multicellular organism: 1
+sperm: 1
+hypothalamus: 1
+gastrula: 1
+adenohypophysis: 1
+egg cell: 1
+forelimb bud: 1
+cerebral cortex: 1
+biceps femoris: 1
+longissimus lumborum muscle: 1
+semimembranosus muscle: 1
+secondary molar tooth: 1
+ear: 1
+material anatomical entity: 1
+endothelial cell: 1
