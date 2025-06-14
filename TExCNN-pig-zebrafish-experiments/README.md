@@ -11,18 +11,45 @@ For a quick overview of the fiels in this directory see below
 │   requirements.txt
 │
 ├───analysis
-│   │   analyse_run_data.py: Used to analyse the .csv file output from a binary classifier optimisation. An example output is shown in `analysis/out/Confusion_matrix_graph.png`
+│   │   analyse_run_data.py
 │   │   count_genes.py
 │   │   count_samples.py
+│   │   gtf2df.py
+│   │   halflife.py
+│   │   verify_balanced_data.py
+│   │   verify_N_bases.py
 │   │
 │   └───out
+│           balanced_output.txt
 │           Confusion_matrix_graph.png
 │           count_samples_output.txt
 │           N_ratio.png
+│           pig_halflife_data.csv
 │
-└───out
-        Parameters.db
-        pigs-half-life-new-embeddings-2.csv
+├───datascripts
+│   │   extract_expression_flags.py
+│   │   fasta_file_N.py
+│   │   generate_embeddings.py
+│   │   generate_fasta_file.py
+│   │   generate_h5_files.py
+│   │
+│   ├───in
+│   │       pig_tss_CORRECTED.csv
+│   │
+│   └───out
+│           combined-example.fa
+│           consolidated_samples.tsv
+│           test.h5
+│
+└───model
+    │   train_optuna.py
+    │   train_optuna_flags.py
+    │   train_optuna_half-life.py
+    │
+    └───out
+            FLAG_TEST-32-positive-negative-balanced-threshold-tuning-mean-all.csv
+            Parameters.db
+            pigs-half-life-new-embeddings-2.csv
 ```
 ## Detailed explanation of each file and associated output
 
