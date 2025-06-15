@@ -1,0 +1,30 @@
+FOR CountVectorizer (2000 samples)
+Test R^2 = 0.126
+Rows & Cols: (3676, 2)
+FOR TfidfVectorizer (500 samples)
+Test R^2 = 0.367
+Rows & Cols: (3676, 2)
+
+# 4000 samples
+FOR CountVectorizer
+Test R^2 = 0.102
+Rows & Cols: (3676, 2)
+FOR TfidfVectorizer
+Test R^2 = 0.385
+Rows & Cols: (3676, 2)
+
+# 4000 samples, in window (3000,13501)
+FOR CountVectorizer
+Test R^2 = 0.073
+Rows & Cols: (3676, 2)
+FOR TfidfVectorizer
+Test R^2 = 0.378
+Rows & Cols: (3676, 2)
+
+# 4000, in window (3000,13501) w. rbf kernel
+FOR CountVectorizer
+Test R^2 = 0.346
+Rows & Cols: (3676, 2)
+FOR TfidfVectorizer
+Test R^2 = 0.390
+Rows & Cols: (3676, 2)

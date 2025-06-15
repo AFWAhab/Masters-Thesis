@@ -1,0 +1,55 @@
+# 12 mers?
+X.shape (20141, 12479318)
+y.shape (20141,)
+y stats: Number of present (positives): 2560  and number of absent (negatives): 1469
+Percentage of present: 63.53933978654753
+FOR CountVectorizer
+Accuracy: 0.6800694961528916
+Precision: 0.693809088136627
+Recall: 0.888671875
+F1-score: 0.7792430210652509
+Number of true positives: 2275
+Number of true negatives: 465
+Number of false positives: 1004
+Number of false negatives: 285
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.62
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.31654186521443156
+FOR TfidfVectorizer
+Accuracy (tf/(tf+fP)): 0.653512037726483
+Precision (tf/(tf+nP)): 0.6474164133738601
+Recall: 0.9984375
+F1-score: 0.7854947756607252
+Number of true positives: 2556
+Number of true negatives: 77
+Number of false positives: 1392
+Number of false negatives: 4
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.9506172839506173
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.05241660993873383
+
+# 10 mers
+X.shape (18344, 1048508)
+Number of test genes: 3669
+y stats: Number of present: 3106  and number of absent: 563
+Percentage of present: 84.65521940583265
+FOR CountVectorizer
+Accuracy: 0.7517034614336331
+Precision: 0.9105873550317994
+Recall: 0.7836445589182228
+F1-score: 0.8423602699428967
+Number of true positives: 2434
+Number of true negatives: 324
+Number of false positives: 239
+Number of false negatives: 672
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.3253012048192771
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.5754884547069272
+FOR TfidfVectorizer
+Accuracy: 0.8473698555464704
+Precision: 0.8472449536279324
+Recall: 1.0
+F1-score: 0.9173065564087419
+Number of true positives: 3106
+Number of true negatives: 3
+Number of false positives: 560
+Number of false negatives: 0
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 1.0
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.0053285968028419185

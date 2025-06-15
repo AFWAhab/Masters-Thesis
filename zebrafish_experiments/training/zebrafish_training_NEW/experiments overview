@@ -1,0 +1,18 @@
+Experiments with fixed promoter sequences
+1. Training on median values. r^2=0 and MSE = 0.352
+2. Training on estradiol values. r^2=0 and MSE = 0.343
+3. training on embryo values. lort
+4. training on embryo values + halflife feautures: r^2=0.18 25 epochs and MSE = 0.87 (adam default)
+5. training on median values + hl: 13 epochs. r^2=0.18 and mse = 0.29 (adam default)
+6. training on embryo values + halflife features ADAM optimized: r^2 = 0.22 28 epochs?
+Note training on values + hf features with sgd results in r^2 = 0
+The 4 below experiments used GSM1820451_dr_48hpf_H3K27me3_peaks.bed
+7. GNN training on median values: r^2 = 0.284. Epoch 042 RES = 10_000
+8. GNN training on embryo values: r^2 = 0.304. Epoch 046 RES = 10_000
+10. GNN training on median values: r^2 = 0.293. Epoch 039 RES = 100_000
+11. GNN training on embryo values: r^2 = 0.329. Epoch 030 RES = 100_000
+The 4 below experiments used GSM803833_H3K27ac_48hpf_peaks.bed
+12. GNN training on embryo values: r^2 = 0.301. Epoch 039 RES = 100_000
+13. GNN training on embryo values: r^2 = 0.238. Epoch 039 RES = 100_000
+14. GNN training on median values: r^2 = 0.260. Epoch 042 RES = 100_000
+15. GNN training on median values: r^2 = 0.323. Epoch 029 RES = 100_000

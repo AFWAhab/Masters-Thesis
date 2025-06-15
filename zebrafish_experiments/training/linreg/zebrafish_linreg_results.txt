@@ -1,0 +1,11 @@
+# 6-mers
+X.shape (20141, 5025)
+y.shape (20141,)
+FOR CountVectorizer
+Test R^2 = 0.056
+
+# 5-mers
+X.shape (20141, 1519)
+y.shape (20141,)
+FOR CountVectorizer
+Test R^2 = 0.088

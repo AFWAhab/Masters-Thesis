@@ -1,0 +1,18 @@
+FOR decision tree
+Test R^2 = 0.079
+FOR Gradient boosting regressor
+Test R^2 = 0.282
+FOR Random forest
+Test R^2 = 0.274
+FOR SVR w. rbf
+Test R^2 = 0.268
+FOR SVR w. poly deg 3
+Test R^2 = 0.268
+FOR SVR w. poly deg 5
+Test R^2 = 0.268
+FOR lin reg
+Test R^2 = 0.155
+FOR ridge reg
+Test R^2 = 0.155
+FOR SGDRegressor
+Test R^2 = 0.155

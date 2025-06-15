@@ -1,0 +1,23 @@
+#2000 samples, 6-mers
+FOR CountVectorizer
+Test R^2 = 0.004
+Rows & Cols: (4419, 2)
+FOR TfidfVectorizer
+Test R^2 = 0.041
+Rows & Cols: (4419, 2)
+
+#500 samples, 10-mers
+FOR CountVectorizer
+Test R^2 = 0.002
+Rows & Cols: (4419, 2)
+FOR TfidfVectorizer
+Test R^2 = 0.003
+Rows & Cols: (4419, 2)
+
+#2000 samples, 10-mers
+FOR CountVectorizer
+Test R^2 = 0.030
+Rows & Cols: (4419, 2)
+FOR TfidfVectorizer
+Test R^2 = 0.003
+Rows & Cols: (4419, 2)

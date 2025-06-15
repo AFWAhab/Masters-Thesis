@@ -1,0 +1,128 @@
+The following trial were done using 6-mers using CountVectorizer + a window of +-1500 kbp from TSS
+X.shape (20141, 5025)
+y.shape (20141,)
+y stats: Number of present (positives): 2560  and number of absent (negatives): 1469
+Percentage of present: 63.53933978654753
+FOR CountVectorizer
+Accuracy: 0.6157855547282204
+Precision: 0.7217353198948291
+Recall: 0.643359375
+F1-score: 0.6802973977695167
+Number of true positives: 1647
+Number of true negatives: 834
+Number of false positives: 635
+Number of false negatives: 913
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.477389811104751
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.5677331518039482
+FOR TfidfVectorizer
+Accuracy (tf/(tf+fP)): 0.6401092082402581
+Precision (tf/(tf+nP)): 0.6399394856278366
+Recall: 0.99140625
+F1-score: 0.7778118296046583
+Number of true positives: 2538
+Number of true negatives: 41
+Number of false positives: 1428
+Number of false negatives: 22
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.6507936507936508
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.027910142954390742
+
+# 6 mers + 10kb up and downstream
+X.shape (20141, 6788)
+y.shape (20141,)
+y stats: Number of present (positives): 2560  and number of absent (negatives): 1469
+Percentage of present: 63.53933978654753
+FOR CountVectorizer
+Accuracy: 0.5631670389674858
+Precision: 0.6851851851851852
+Recall: 0.578125
+F1-score: 0.6271186440677966
+Number of true positives: 1480
+Number of true negatives: 789
+Number of false positives: 680
+Number of false negatives: 1080
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.42215088282504015
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.5371000680735194
+FOR TfidfVectorizer
+Accuracy (tf/(tf+fP)): 0.6356415984115165
+Precision (tf/(tf+nP)): 0.6355511420059583
+Recall: 1.0
+F1-score: 0.777170613236187
+Number of true positives: 2560
+Number of true negatives: 1
+Number of false positives: 1468
+Number of false negatives: 0
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 1.0
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.0006807351940095302
+
+# 8 mers
+X.shape (20141, 67451)
+y.shape (20141,)
+y stats: Number of present (positives): 2560  and number of absent (negatives): 1469
+Percentage of present: 63.53933978654753
+FOR CountVectorizer
+Accuracy: 0.6604616530156366
+Precision: 0.7454695222405272
+Recall: 0.70703125
+F1-score: 0.7257417802726543
+Number of true positives: 1810
+Number of true negatives: 851
+Number of false positives: 618
+Number of false negatives: 750
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.5315427857589007
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.5793056501021103
+FOR TfidfVectorizer
+Accuracy (tf/(tf+fP)): 0.6564904442789774
+Precision (tf/(tf+nP)): 0.6596091205211726
+Recall: 0.94921875
+F1-score: 0.7783472133247918
+Number of true positives: 2430
+Number of true negatives: 215
+Number of false positives: 1254
+Number of false negatives: 130
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.6231884057971014
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.146358066712049
+
+# 10-mers
+X.shape (20141, 1051406)
+y.shape (20141,)
+y stats: Number of present (positives): 2560  and number of absent (negatives): 1469
+Percentage of present: 63.53933978654753
+FOR CountVectorizer
+Accuracy: 0.684288905435592
+Precision: 0.6975460122699386
+Recall: 0.88828125
+F1-score: 0.7814432989690722
+Number of true positives: 2274
+Number of true negatives: 483
+Number of false positives: 986
+Number of false negatives: 286
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.6280884265279584
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.3287950987066031
+FOR TfidfVectorizer
+Accuracy (tf/(tf+fP)): 0.6403574087862993
+Precision (tf/(tf+nP)): 0.6389097274318579
+Recall: 0.998046875
+F1-score: 0.7790821771611526
+Number of true positives: 2555
+Number of true negatives: 25
+Number of false positives: 1444
+Number of false negatives: 5
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.8333333333333334
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.01701837985023826
+
+# 12mers
+X.shape (20141, 12479318)
+y.shape (20141,)
+y stats: Number of present (positives): 2560  and number of absent (negatives): 1469
+Percentage of present: 63.53933978654753
+FOR CountVectorizer
+Accuracy: 0.6800694961528916
+Precision: 0.693809088136627
+Recall: 0.888671875
+F1-score: 0.7792430210652509
+Number of true positives: 2275
+Number of true negatives: 465
+Number of false positives: 1004
+Number of false negatives: 285
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.62
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.31654186521443156

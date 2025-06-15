@@ -1,0 +1,19 @@
+y.shape (20141,)
+FOR decision tree
+Test R^2 = 0.073
+FOR Gradient boosting regressor
+Test R^2 = 0.279
+FOR Random forest
+Test R^2 = 0.265
+FOR SVR w. rbf
+Test R^2 = 0.246
+FOR SVR w. poly deg 3
+Test R^2 = 0.246
+FOR SVR w. poly deg 5
+Test R^2 = 0.246
+FOR lin reg
+Test R^2 = 0.115
+FOR ridge reg
+Test R^2 = 0.115
+FOR SGDRegressor
+Test R^2 = 0.109

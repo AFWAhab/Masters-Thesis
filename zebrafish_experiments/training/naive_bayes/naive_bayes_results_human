@@ -1,0 +1,111 @@
+# EXPERIMENTS ON HUMAN GENES
+# Experiment on substring in window (8500, 11501) of tss with 1000 genes
+X.shape (1000, 4096)
+y.shape (18377,)
+y stats: Number of present: 172  and number of absent: 28
+Percentage of present: 86.0
+FOR CountVectorizer
+Accuracy: 0.735
+Precision: 0.9047619047619048
+Recall: 0.7732558139534884
+F1-score: 0.8338557993730408
+FOR TfidfVectorizer
+Accuracy: 0.835
+Precision: 0.8926553672316384
+Recall: 0.9186046511627907
+F1-score: 0.9054441260744985
+
+# Experiment on all genes in window of (8500, 11501)
+y.shape (18377,)
+X.shape (18344, 4119)
+Number of test genes: 3669
+y stats: Number of present: 3106  and number of absent: 563
+Percentage of present: 84.65521940583265
+FOR CountVectorizer
+Accuracy: 0.7097301717089125
+Precision: 0.9243243243243243
+Recall: 0.7157115260785576
+F1-score: 0.8067501360914534
+FOR TfidfVectorizer
+Accuracy: 0.8143908421913328
+Precision: 0.9108776685869197
+Recall: 0.8654217643271088
+F1-score: 0.8875681030212976
+
+# Experiment on all genes in window of (3000, 13501)
+y.shape (18377,)
+X.shape (18344, 4159)
+Number of test genes: 3669
+y stats: Number of present: 3106  and number of absent: 563
+Percentage of present: 84.65521940583265
+FOR CountVectorizer
+Accuracy: 0.6355955301171982
+Precision: 0.9070409572020248
+Recall: 0.6345782356728912
+F1-score: 0.7467323356696344
+Number of true positives: 1971
+Number of true negatives: 361
+Number of false positives: 202
+Number of false negatives: 1135
+NPV (Out of all the negative predictions we made, how many were actually negative?): 0.24131016042780748
+Specificity (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.6412078152753108
+FOR TfidfVectorizer
+Accuracy: 0.8465521940583265
+Precision: 0.8875342883267296
+Recall: 0.9375402446877013
+F1-score: 0.9118521997808048
+Number of true positives: 2912
+Number of true negatives: 194
+Number of false positives: 369
+Number of false negatives: 194
+NPV (Out of all the negative predictions we made, how many were actually negative?): 0.5
+Specificity (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.34458259325044405
+
+# HUMAN EXPERIMENTS USING BALANCED TRAINING SETS
+# In window (8500, 11501)
+FOR CountVectorizer
+Accuracy: 0.7233115468409586
+Precision: 0.9298831385642737
+Recall: 0.7243172951885566
+F1-score: 0.814327485380117
+Number of true positives: 557
+Number of true negatives: 107
+Number of false positives: 42
+Number of false negatives: 212
+NPV (Out of all the negative predictions we made, how many were actually negative?): 0.335423197492163
+Specificity (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.7181208053691275
+FOR TfidfVectorizer
+Accuracy: 0.7222222222222222
+Precision: 0.9326599326599326
+Recall: 0.7204161248374512
+F1-score: 0.8129126925898753
+Number of true positives: 554
+Number of true negatives: 109
+Number of false positives: 40
+Number of false negatives: 215
+NPV (Out of all the negative predictions we made, how many were actually negative?): 0.33641975308641975
+Specificity (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.7315436241610739
+
+# In window (3500, 13501)
+FOR CountVectorizer
+Accuracy: 0.659041394335512
+Precision: 0.9206642066420664
+Recall: 0.6488946684005201
+F1-score: 0.7612509534706331
+Number of true positives: 499
+Number of true negatives: 106
+Number of false positives: 43
+Number of false negatives: 270
+NPV (Out of all the negative predictions we made, how many were actually negative?): 0.28191489361702127
+Specificity (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.7114093959731543
+FOR TfidfVectorizer
+Accuracy: 0.6612200435729847
+Precision: 0.922509225092251
+Recall: 0.6501950585175552
+F1-score: 0.7627765064836003
+Number of true positives: 500
+Number of true negatives: 107
+Number of false positives: 42
+Number of false negatives: 269
+NPV (Out of all the negative predictions we made, how many were actually negative?): 0.2845744680851064
+Specificity (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.7181208053691275

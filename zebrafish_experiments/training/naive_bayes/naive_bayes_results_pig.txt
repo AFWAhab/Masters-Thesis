@@ -1,0 +1,112 @@
+# PIGS 7kbs up and 3.5kbs down
+y.shape (16349,)
+X.shape (16349, 4096)
+Number of test genes: 3270
+y stats: Number of present: 2728  and number of absent: 542
+Percentage of present: 83.42507645259938
+FOR CountVectorizer
+Accuracy: 0.535474006116208
+Precision: 0.864376130198915
+Recall: 0.5256598240469208
+F1-score: 0.6537497150672441
+Number of true positives: 1434
+Number of true negatives: 317
+Number of false positives: 225
+Number of false negatives: 1294
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.196772191185599
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.584870848708487
+FOR TfidfVectorizer
+Accuracy: 0.8351681957186544
+Precision: 0.8366656413411258
+Recall: 0.9970674486803519
+F1-score: 0.9098511456765346
+Number of true positives: 2720
+Number of true negatives: 11
+Number of false positives: 531
+Number of false negatives: 8
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.5789473684210527
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.02029520295202952
+
+# PIGS 1.5kbs up and down
+y.shape (16349,)
+X.shape (16349, 4096)
+Number of test genes: 3270
+y stats: Number of present: 2728  and number of absent: 542
+Percentage of present: 83.42507645259938
+FOR CountVectorizer
+Accuracy: 0.5581039755351682
+Precision: 0.872748402091807
+Recall: 0.5505865102639296
+F1-score: 0.6752079118903125
+Number of true positives: 1502
+Number of true negatives: 323
+Number of false positives: 219
+Number of false negatives: 1226
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.20852162685603615
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.5959409594095941
+FOR TfidfVectorizer
+Accuracy: 0.7807339449541284
+Precision: 0.853427065026362
+Recall: 0.8900293255131965
+F1-score: 0.8713439799031043
+Number of true positives: 2428
+Number of true negatives: 125
+Number of false positives: 417
+Number of false negatives: 300
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.29411764705882354
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.23062730627306274
+
+# PIG data with SScrofa11.1 genome assembly
+# PIGS 1.5kbs up and down
+Number of test genes: 3264
+y stats: Number of present: 2268  and number of absent: 996
+Percentage of present: 69.48529411764706
+FOR CountVectorizer
+Accuracy: 0.5962009803921569
+Precision: 0.7531982942430704
+Recall: 0.623015873015873
+F1-score: 0.681949806949807
+Number of true positives: 1413
+Number of true negatives: 533
+Number of false positives: 463
+Number of false negatives: 855
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.3840057636887608
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.535140562248996
+FOR TfidfVectorizer
+Accuracy: 0.6816789215686274
+Precision: 0.7046287046287046
+Recall: 0.9329805996472663
+F1-score: 0.8028837032821097
+Number of true positives: 2116
+Number of true negatives: 109
+Number of false positives: 887
+Number of false negatives: 152
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.41762452107279696
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.10943775100401607
+
+# PIGS 7kbs up and 3.5kbs down
+Number of test genes: 3264
+y stats: Number of present: 2268  and number of absent: 996
+Percentage of present: 69.48529411764706
+FOR CountVectorizer
+Accuracy: 0.5750612745098039
+Precision: 0.7367006985491671
+Recall: 0.6044973544973545
+F1-score: 0.664083313150884
+Number of true positives: 1371
+Number of true negatives: 506
+Number of false positives: 490
+Number of false negatives: 897
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.36065573770491804
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.5080321285140562
+FOR TfidfVectorizer
+Accuracy: 0.6464460784313726
+Precision: 0.7067557535263549
+Recall: 0.8395061728395061
+F1-score: 0.7674324869004434
+Number of true positives: 1904
+Number of true negatives: 206
+Number of false positives: 790
+Number of false negatives: 364
+Negative precision (Out of all the negative predictions we made, how many were actually negative?): 0.36140350877192984
+Negative recall (Out of all the sequences that should be predicted as unexpressed, how many did we correctly predict as unexpressed?): 0.20682730923694778
