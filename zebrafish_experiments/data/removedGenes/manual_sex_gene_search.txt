@@ -1,0 +1,8 @@
+sox9a
+sox9b
+wt1a
+wt1b
+gata4
+nr5a1a
+nr5a1b
+nr5a2
